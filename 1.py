@@ -9,4 +9,16 @@ print("edges = " + str(G_fb.number_of_edges()))
 # Show number of nodes in G_fb
 print("nodes = " + str(G_fb.number_of_nodes()))
 
-# print(G.number_of_nodes(), G.number_of_edges(), list(G.nodes))
+# print(list(G_fb.nodes))
+# print(nx.degree(G_fb,3401))
+
+total_edges = G_fb.number_of_edges()
+total_nodes = G_fb.number_of_nodes()
+
+complete_edges = int(total_nodes * (total_nodes - 1) / 2)
+
+edge_probab = total_edges / complete_edges
+
+print(edge_probab, complete_edges)
+
+# print(nx.average_clustering(G_fb))
