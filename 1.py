@@ -33,5 +33,5 @@ G_er = nx.erdos_renyi_graph(total_nodes, edge_probab)
 
 betCent = nx.betweenness_centrality(G_fb, normalized=True, endpoints=True)
 top10 = sorted(betCent, key=betCent.get, reverse=True)[:10]
-
+# [107, 1684, 3437, 1912, 1085, 0, 698, 567, 58, 428
 print(top10)
